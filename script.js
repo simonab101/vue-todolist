@@ -41,5 +41,19 @@ let vue = new Vue({
   ],
     inputTextValue: ""
   },
-
+  methods: {
+    //Aggiunge task alla lista da variabile input
+      addTask: function () {
+        if (this.inputTextValue != "") {
+          this.tasks.push({
+          text: this.inputTextValue,
+          done: false
+        })
+      }
+    this.inputTextValue = "";
+    },
+    delTask: function (index) {
+    this.tasks.splice(index, 1);
+    }
+  }
 });
