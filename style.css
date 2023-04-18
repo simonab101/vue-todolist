@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; 
+}
+
+body {
+  background-color: #F6F8F9;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 1%;
+}
+
+header img, header span{
+  vertical-align: middle;
+}
+
+header span {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Main e container*/
+main {
+  background-color: white;
+  margin: 3% 15%;
+  border-radius: 5px;
+}
+
+nav, .container {
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+}
+
+nav {
+  border-bottom: 2px solid #F6F8F9;
+  text-align: center;
+}
+
+.container {
+  color: #3F424A;
+  line-height: 35px;
+}
+
+#tasks-container {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.title {
+  font-stretch: extra-expanded;
+  font-weight: bold;
+}
+
+.task {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Button task */
+#button-task {
+  background-color: #6DA9ED;
+  color: white;
+  border: 1px solid #6DA9ED;
+
+  border-radius: 4px;
+  padding: 0.5% 1%;
+  font-size: 12px;
+}
+
+/* Input */
+#inputText {
+  width: 600px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #afafaf;
+  padding: 10px;
+}
+
+/* Done */
+.done {
+  text-decoration: line-through;
+}
+
+/* Close icon */
+.close-icon {
+  margin-right: 10px;
+}
+
+.fa-times-circle:hover {
+  color: red;
+}
+
+.fa-check-circle:hover {
+  color: green;
+}
